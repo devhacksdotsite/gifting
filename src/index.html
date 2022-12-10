@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifting Theme</title>
+</head>
+<body>
+    <header class="cxheader">
+        <div class="cxheader__logo">TRU<br>RED</div>
+        <button class="cxbtn cxbtn--simple cxbtn--small" onclick="modalActions.callOpen()"><span>&#9432;</span> Help</button>
+    </header>   
+
+    <div class="cxlayout cxlayout--gray">
+        <section class="cxlogin">
+            <div class="cxheadline">
+                <h1 class="cxheadline__main">We got you something!</h1>
+                <p class="cxheadline__sub">Here's a little token of our appreciation. Sign in below with your email address, and the special code you received.</p>
+            </div>
+
+            <form class="cxform">
+                <label id="email_label" class="cxform__label" for="email">Username / Email</label>
+                <input 
+                    id="email" 
+                    class="cxform__input" 
+                    type="text" 
+                    name="email" 
+                    aria-labelledby="email_label"
+                    aria-describedby="email_error" 
+                    required 
+                />
+                <div id="email_error" class="sr-only">Username/Email error</div>
+
+                <label id="code_label" class="cxform__label" for="code">Code</label>
+                <input 
+                    id="code" 
+                    class="cxform__input" 
+                    type="text" 
+                    name="code" 
+                    aria-labelledby="code_label"
+                    aria-describedby="code_error" 
+                    required 
+                />
+                <div id="code_error" class="sr-only">Username/Email error</div>
+
+                <button class="cxbtn cxbtn--filled cxbtn--right" type="submit">Continue</button>
+            </form>
+
+            <div class="cxlogin__error cxhidden">
+                <h1 class="cxlogin__error-msg">Incorrect Credentials</h1>
+
+                <div class="cxlogin__track-status">
+                    <h2>Track your status</h2>
+                    <form class="cxform">
+                        <label id="zipcode_label" class="cxform__label" for="zipcode">Zip Code</label>
+                        <input 
+                            id="zipcode" 
+                            class="cxform__input" 
+                            type="text" 
+                            name="zipcode" 
+                            aria-labelledby="zipcode_label" 
+                            aria-describedby="zipcode_error"
+                            required  
+                        />  
+                        <button class="cxbtn cxbtn--filled cxbtn--center" type="submit">Continue</button>
+                        <div id="zipcode_error" class="sr-only">Zip Code error</div>
+
+                    </form>
+                </div>
+
+                <p class="cxlogin__fine-print">
+                    If this doesn't seem right, please contact our friendly customer service by email at <a href="mailto:promosupport@staples.com">promosupport@staples.com</a> or call <a href="tel:18004913003">1-800-491-3003</a>.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        footer here
+    </footer>
+
+    <div class="overlay" role="dialog" aria-modal="true" aria-live="assertive" aria-labelledby="modal-title">
+        <div class="modal">
+            <button class="close-modal cxbtn cxbtn--simple cxbtn--right cxbtn--small" aria-label="Close">&#x2715;</button>
+            <h3 id="modal-title">Help</h3>
+            <h4>Frequently Asked Questions</h4>
+
+            <ul>
+                <li>+ What are normal production and delivery times?</li>
+                <li>+ How do I track my order?</li>
+                <li>+ What do I do if my order has not arrived?</li>
+                <li>+ California Proposition 65</li>
+            </ul>
+
+            <h4>We're here to help</h4>
+            <p>Have a question? Can't find what you're looking for? We're here to help. Feel free to get in touch with us. We look forward to hearing from you!</p>
+
+            <div>
+                <a href="#">promosupport@staples.com</a>
+                <a href="#">1.800.491.3003</a>
+            </div>
+
+            <button class="close-modal cxbtn cxbtn--filled cxbtn--right">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>

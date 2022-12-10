@@ -1,0 +1,20 @@
+.cxheader {
+    max-height: 20vh;
+}
+
+.cxlayout {
+    max-height: 70vh;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    &--gray {
+        background-color: #ddd;
+    }
+}
+
+.cxfooter {
+    max-height: 10vh;
+}
