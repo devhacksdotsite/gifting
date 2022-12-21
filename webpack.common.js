@@ -10,7 +10,8 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.ts',
-    pdp: './src/pdp.ts',
+    pdp: './src/index.ts',
+    checkout: './src/index.ts',
   },
   mode: 'development',
   devtool: 'source-map',
@@ -69,10 +70,16 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/pdp.html',
+      template: './src/pages/pdp.html',
       inject: 'body',
       chunks: ['pdp'],
       filename: 'pdp.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/checkout.html',
+      inject: 'body',
+      chunks: ['checkout'],
+      filename: 'checkout.html'
     }),
     new ForkTsCheckerWebpackPlugin(),
     new CopyPlugin({

@@ -36,9 +36,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, corrupti.</p>
     
                         <ul>
-                            <li>Large Size</li>
-                            <li>Large Size</li>
-                            <li>Large Size</li>
+                            <li>&#x2022; Large Size</li>
+                            <li>&#x2022; Large Size</li>
+                            <li>&#x2022; Large Size</li>
                         </ul>
                     </section>
 
@@ -53,6 +53,13 @@
                             </select>
         
                             <button class="cxbtn cxbtn--filled">Redeem</button>
+
+                            <script>
+                                document.getElementById('redeem-form').addEventListener('submit', function(e) {
+                                    e.preventDefault();
+                                    location.href = 'checkout.html';
+                                });
+                            </script>
                         </form>                   
                     </section>
 
