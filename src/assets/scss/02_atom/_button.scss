@@ -3,13 +3,14 @@
     border-radius: 100px;
     padding: 10px;
     width: 30%;
+    cursor: pointer;
 
     &--filled {
-        background-color: #4484F5;
+        background-color: #2E5B8D;
         color: #fff;
 
         &:hover {
-            background-color: lighten(#4484F5, 5%);
+            background-color: lighten(#2E5B8D, 5%);
         }
     }
 

@@ -8,7 +8,10 @@ const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: {
+    index: './src/index.ts',
+    pdp: './src/pdp.ts',
+  },
   mode: 'development',
   devtool: 'source-map',
   optimization: {
@@ -60,7 +63,16 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pdp.html',
+      inject: 'body',
+      chunks: ['pdp'],
+      filename: 'pdp.html'
     }),
     new ForkTsCheckerWebpackPlugin(),
     new CopyPlugin({

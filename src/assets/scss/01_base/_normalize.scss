@@ -2,6 +2,25 @@ body {
  font-family: sans-serif;
 }
 
+a {
+    color: #4484F5;
+    
+    &:hover {
+        color: red
+    }
+}
+
+ul, ol {
+    list-style: none;
+}
+
 h1 {
 
+}
+
+hr {
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #CCCCCC;
 }

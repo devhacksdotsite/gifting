@@ -1,0 +1,33 @@
+// how template should be layed out
+.help {
+    margin: 20px 0;
+
+    &__faqs {
+        margin-top: 20px;
+    
+        .faqs__list {
+    
+            .faqs__item {
+                margin: 10px 5px;
+    
+                span {
+                    color: #4484F5;
+                }
+            }
+        }
+    }
+
+    &__contact {
+        margin-top: 30px;
+
+        &-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+    }
+}
+

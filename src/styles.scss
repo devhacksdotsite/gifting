@@ -1,5 +1,5 @@
 /* ---------------------------------
- base
+ abstract
 --------------------------------- */
 @import "assets/scss/00_abstract/_variable";
 @import "assets/scss/00_abstract/_mixin";
@@ -18,5 +18,8 @@
 --------------------------------- */
 // can page styles be conditionally rendered???
 @import "assets/scss/06_page/_authentication";
+@import "assets/scss/06_page/_pdp";
+
+
 
 

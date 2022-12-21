@@ -2,19 +2,53 @@
     max-height: 20vh;
 }
 
-.cxlayout {
+.cxwrapper {
     max-height: 70vh;
     min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    overflow-y: scroll;
 
     &--gray {
-        background-color: #ddd;
+        background-color: #FAFAFA;
     }
+}
+
+.cxlayout {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #fff;
 }
 
 .cxfooter {
     max-height: 10vh;
 }
+
+.cxgrid {
+    display: grid;
+    gap: 5px;
+    margin: 5px;
+
+    & > div {
+        // background:red;
+        // height:20px;
+    }
+
+      /* activate the 2nd column after 2 items*/
+    & > div:first-child:nth-last-child(n+2) ~ :nth-child(2) {
+        // background: blue;
+        grid-column: 2;
+    }
+
+    /* activate the 3rd column after 4 items*/
+    & > div:first-child:nth-last-child(n+4) ~ :nth-child(3) {
+        background: green;
+        grid-column: 3;
+    }
+  }

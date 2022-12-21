@@ -1,6 +1,6 @@
-.overlay {
+.cxoverlay {
     display: none;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,14 +8,21 @@
     background-color: rgba(211, 211, 211, 0.8);
 }
 
-.modal {
+.cxmodal {
     background-color: white;
-    margin: 20% auto;
+    margin: 10% auto;
     width: 80%;
-    height: 50%;
+    max-height: 80%;
+    overflow-y: scroll;
     padding: 1rem;
     border: 1px solid gray;
     border-radius: 10px;
+
+    // move me to molecules
+    &__content {
+        padding: 1rem;
+        margin: 1rem;
+    }
 }
 
 :focus-visible {
