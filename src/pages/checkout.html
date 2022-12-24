@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Checkout</title>
     </head>
     <body>
@@ -13,8 +14,179 @@
         </header>   
     
         <main class="cxwrapper">
-            <section class="cxlayout pdp">
-                Checkout page
+            <section class="cxlayout checkout">
+                <h1 class="cxheadline__main">Enter the address where your gift will be shipped</h1>
+                <hr>
+                <form id="checkout-form" class="cxgrid">
+                    <div>
+                        <label id="firstname_label" class="cxform__label" for="firstname">
+                            <span> First Name <b style="color:red">&ast;</b></span>
+                        </label>
+                        <input 
+                            class="cxform__input" 
+                            type="text" 
+                            id="firstname" 
+                            name="firstname" 
+                            aria-labelledby="firstname_label"
+                            aria-describedby="firstname_error" 
+                        />
+                        <div id="firstname_error" class="sr-only">Firstname error</div>
+                    </div>
+
+                    <div>
+                        <label id="lastname_label" class="cxform__label" for="lastname">
+                            <span>Last Name <b style="color:red">&ast;</b></span> 
+                        </label>
+                        <input 
+                            class="cxform__input" 
+                            type="text" 
+                            id="lastname" 
+                            name="lastname" 
+                            aria-labelledby="lastname_label"
+                            aria-describedby="lastname_error" 
+                        />
+                        <div id="lastname_error" class="sr-only">Lastname error</div>
+                    </div>
+
+                    <div>
+                        <label id="email_label" class="cxform__label" for="email">
+                            <span>Email Address <b style="color:red">&ast;</b></span> 
+                        </label>
+                        <input 
+                            class="cxform__input" 
+                            type="text" 
+                            id="email" 
+                            name="email" 
+                            aria-labelledby="email_label"
+                            aria-describedby="email_error" 
+                        />
+                        <div id="email_error" class="sr-only">Email error</div>
+                    </div>
+
+                    <div>
+                        <label id="phone_label" class="cxform__label" for="phone" style="display: flex;justify-content: space-between;">
+                            <span>Phone <b style="color:red">&ast;</b></span>
+                            <span style="color:blue;"><i class="fa fa-question-circle" aria-hidden="true"></i> Why is this needed</span></label>
+                        <input 
+                            class="cxform__input" 
+                            type="text" 
+                            id="phone" 
+                            name="phone" 
+                            aria-labelledby="phone_label"
+                            aria-describedby="phone_error" 
+                        />
+                        <div id="phone_error" class="sr-only">Phone error</div>
+                    </div>
+
+                    <div>
+                        <label id="address1_label" class="cxform__label" for="address1">
+                            <span>Street Address <b style="color:red">&ast;</b></span> 
+                        </label>
+                        <input 
+                            class="cxform__input" 
+                            type="text" 
+                            id="address1" 
+                            name="address1" 
+                            aria-labelledby="address1_label"
+                            aria-describedby="address1_error" 
+                        />
+                        <div id="address1_error" class="sr-only">Street Address error</div>
+                    </div>
+
+                    <div>
+                        <label id="address2_label" class="cxform__label" for="address2">Street Address, Line 2</label>
+                        <input 
+                            class="cxform__input" 
+                            type="text" 
+                            id="address2" 
+                            name="address2" 
+                            aria-labelledby="address2_label"
+                            aria-describedby="address2_error" 
+                        />
+                        <div id="address2_error" class="sr-only">Street Address, Line 2 Error</div>
+                    </div>
+
+                    <div>
+                        <label id="city_label" class="cxform__label" for="city">
+                            <span>City <b style="color:red">&ast;</b></span> 
+                        </label>
+                        <input 
+                            class="cxform__input" 
+                            type="text" 
+                            id="city" 
+                            name="city"
+                            aria-labelledby="city_label"
+                            aria-describedby="city_error" 
+                        />
+                        <div id="city_error" class="sr-only">City Error</div>
+                    </div>
+
+                    <div style="display:flex;justify-content: space-between;gap:10px">
+                        <div style="width:100%">
+                            <label id="state_label" class="cxform__label" for="state">
+                                <span>State <b style="color:red">&ast;</b></span> 
+                            </label>
+                            <select 
+                                class="cxform__select" 
+                                type="text" 
+                                id="state" 
+                                name="state" 
+                                aria-labelledby="state_label"
+                                aria-describedby="state_error" 
+                            >
+                                <option value="ks">KS</option>
+                            </select>
+                            <div id="state_error" class="sr-only">City Error</div>
+                        </div>
+
+                        <div style="width:100%">
+                            <label id="zip_label" class="cxform__label" for="zip">
+                                <span>Zip <b style="color:red">&ast;</b></span> 
+                            </label>
+                            <input 
+                                class="cxform__input" 
+                                type="text" 
+                                id="zip" 
+                                name="zip"
+                                aria-labelledby="zip_label"
+                                aria-describedby="zip_error" 
+                            />
+                            <div id="zip_error" class="sr-only">Zip Error</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label id="country_label" class="cxform__label" for="country">
+                            <span>Country <b style="color:red">&ast;</b></span> 
+                        </label>
+                        <select 
+                            class="cxform__select" 
+                            type="text" 
+                            id="country" 
+                            name="country" 
+                            aria-labelledby="country_label"
+                            aria-describedby="country_error" 
+                        >
+                            <option value="us">United States</option>
+                        </select>
+                        <div id="country_error" class="sr-only">Country Error</div>
+                    </div>
+
+                    <div class="sr-only">This is a filler find a better way to do this</div>
+                    <div class="sr-only">This is a filler find a better way to do this</div>
+
+                    <div>
+                        <button class="cxbtn cxbtn--simple">Back</button>
+                        <button class="cxbtn cxbtn--filled">Continue</button>
+                    </div>
+
+                    <script>
+                        document.getElementById('checkout-form').addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            location.href = 'review.html';
+                        });
+                    </script>
+                </form>
             </section>
         </main>
     
