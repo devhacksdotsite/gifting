@@ -13,6 +13,7 @@ module.exports = {
     pdp: './src/index.ts',
     checkout: './src/index.ts',
     review: './src/index.ts',
+    confirmation: './src/index.ts',
   },
   mode: 'development',
   devtool: 'source-map',
@@ -87,6 +88,12 @@ module.exports = {
       inject: 'body',
       chunks: ['review'],
       filename: 'review.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/confirmation.html',
+      inject: 'body',
+      chunks: ['confirmation'],
+      filename: 'confirmation.html'
     }),
     new ForkTsCheckerWebpackPlugin(),
     new CopyPlugin({
