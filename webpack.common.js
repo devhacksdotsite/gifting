@@ -14,6 +14,7 @@ module.exports = {
     checkout: './src/index.ts',
     review: './src/index.ts',
     confirmation: './src/index.ts',
+    orderstatus: './src/index.ts'
   },
   mode: 'development',
   devtool: 'source-map',
@@ -94,6 +95,12 @@ module.exports = {
       inject: 'body',
       chunks: ['confirmation'],
       filename: 'confirmation.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/orderstatus.html',
+      inject: 'body',
+      chunks: ['orderstatus'],
+      filename: 'orderstatus.html'
     }),
     new ForkTsCheckerWebpackPlugin(),
     new CopyPlugin({
