@@ -26,8 +26,10 @@ function closeModal(opener) {
   opener.focus();
 }
 
-function setVisibile(visible) {
-  const display = visible? 'block' : 'none';
+function setVisibile(visible, el) {
+  const display = visible ? 'block' : 'none';
+
+  // this need to accept an element id to know which modal to toggle
   document.querySelector('.cxoverlay').style.display = display;
 }
 

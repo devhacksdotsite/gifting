@@ -3,7 +3,8 @@ body {
 }
 
 a {
-    color: #4484F5;
+    color: #2E5B8D;
+    font-weight: 700;
     
     &:hover {
         color: red
@@ -23,4 +24,30 @@ hr {
     height: 1px;
     border: 0; 
     border-top: 1px solid #CCCCCC;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse; 
+
+    tbody {
+
+        tr {
+            border-bottom: 1px solid #dddddd;
+            
+            &:first-of-type {
+                border-top: 1px solid #ddd;
+            }
+            &:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+        }
+    }
+
+    th, td {
+        padding: 5px 0;
+        text-align: start;
+    }
+
 }
