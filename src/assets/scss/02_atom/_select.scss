@@ -14,17 +14,15 @@
 
     &__select--pill {
         border-radius: 100px;
-        width: 30%;
+        //width: 30%;
         .selectdiv {
             position: relative;
-            /*Don't really need this just for demo styling*/
-            
             float: left;
             min-width: 200px;
             margin: 50px 33%;
           }
           
-          .selectdiv:after {
+          .selectdiv::after {
               content: '\f078';
               font: normal normal normal 17px/1 FontAwesome;
               color: #0ebeff;
@@ -37,9 +35,9 @@
               pointer-events: none;
           }
           
-          /* IE11 hide native button (thanks Matt!) */
+          /* IE11 hide native button */
           select::-ms-expand {
-          display: none;
+            display: none;
           }
           
           .selectdiv select {
