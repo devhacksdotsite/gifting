@@ -9,15 +9,17 @@
 <body>
     <header class="cxheader cxheader--gray">
         <div class="cxheader__logo">TRU<br>RED</div>
-        <button class="cxbtn cxbtn--simple cxbtn--small cxmodal__open"><span><i class="fa fa-question-circle" aria-hidden="true"></i>
+        <button class="cxbtn cxbtn--simple cxbtn--small cxmodal__open" data-modal="help"><span><i class="fa fa-question-circle" aria-hidden="true"></i>
         </span> Help</button>
     </header>   
 
     <main class="cxwrapper">
         <section class="cxlayout pdp">
             <div class="cxgrid">
-                <div class="pdp__image">
-                    <image width="100%" src="https://imagelab.artifi.net/Designer/Image/GetImage?format=png&personalization=d2ViQXBpQ2xpZW50S2V5JTNENWRkNzhhMjUtYzIyZC00ZmZlLWEzNmUtYjgwM2Y5MDcwMmFmJTI2d2Vic2l0ZUlkJTNEMTM2&ConversionUnit=In&allowIndexing=true&sku=81W4E_001&angleCode=81W4E_F1&parameters=%5B%7B%22type%22%3A%22image%22%2C%22widget_key%22%3A%22YSF%22%2C%22customFilters%22%3A%5B%7B%22Type%22%3A%22Tint%22%2C%22Color%22%3A%22%238c8d8e%22%2C%22Opacity%22%3A%221%22%7D%5D%2C%22src%22%3A%2283181%22%2C%22width%22%3A%229.000%22%2C%22groupAlignment%22%3A%22TopCenter%22%2C%22angle%22%3A%220%22%2C%22dm_code%22%3A%22SC%22%2C%22is_external_img%22%3A%22false%22%2C%22isRemoveBackground%22%3Afalse%7D%2C%7B%22type%22%3A%22image%22%2C%22widget_key%22%3A%22YSB%22%2C%22customFilters%22%3A%5B%5D%2C%22src%22%3A%22%22%2C%22width%22%3A%229.000%22%2C%22groupAlignment%22%3A%22TopCenter%22%2C%22angle%22%3A%220%22%2C%22dm_code%22%3A%22SC%22%2C%22is_external_img%22%3A%22false%22%2C%22isRemoveBackground%22%3Afalse%7D%5D&width=600&height=600&isZoom=True" alt="product image" />
+                <div class="cximage">
+                    <div class="cximage__wrapper">
+                        <img class="cximage__image" src="https://imagelab.artifi.net/Designer/Image/GetImage?format=png&personalization=d2ViQXBpQ2xpZW50S2V5JTNENWRkNzhhMjUtYzIyZC00ZmZlLWEzNmUtYjgwM2Y5MDcwMmFmJTI2d2Vic2l0ZUlkJTNEMTM2&ConversionUnit=In&allowIndexing=true&sku=81W4E_001&angleCode=81W4E_F1&parameters=%5B%7B%22type%22%3A%22image%22%2C%22widget_key%22%3A%22YSF%22%2C%22customFilters%22%3A%5B%7B%22Type%22%3A%22Tint%22%2C%22Color%22%3A%22%238c8d8e%22%2C%22Opacity%22%3A%221%22%7D%5D%2C%22src%22%3A%2283181%22%2C%22width%22%3A%229.000%22%2C%22groupAlignment%22%3A%22TopCenter%22%2C%22angle%22%3A%220%22%2C%22dm_code%22%3A%22SC%22%2C%22is_external_img%22%3A%22false%22%2C%22isRemoveBackground%22%3Afalse%7D%2C%7B%22type%22%3A%22image%22%2C%22widget_key%22%3A%22YSB%22%2C%22customFilters%22%3A%5B%5D%2C%22src%22%3A%22%22%2C%22width%22%3A%229.000%22%2C%22groupAlignment%22%3A%22TopCenter%22%2C%22angle%22%3A%220%22%2C%22dm_code%22%3A%22SC%22%2C%22is_external_img%22%3A%22false%22%2C%22isRemoveBackground%22%3Afalse%7D%5D&width=600&height=600&isZoom=True" alt="product image" />
+                    </div>
                 </div>
     
                 <div class="pdp__details">
@@ -48,13 +50,13 @@
                         <h2 class="cxheadline__sub">Size</h2>
                         <hr />
                         <form id="redeem-form" class="cxform">
-                            <select class="cxform__select cxform__select--pill" name="size" id="zize">
+                            <select class="cxform__select cxform__select--medium cxform__select--pill" name="size" id="zize">
                                 <option value="sm">Small</option>
                                 <option value="md">Medium</option>
                                 <option value="lg">Large</option>
                             </select>
         
-                            <button class="cxbtn cxbtn--filled">Redeem</button>
+                            <button class="cxbtn cxbtn--medium cxbtn--filled">Redeem</button>
 
                             <script>
                                 document.getElementById('redeem-form').addEventListener('submit', function(e) {
@@ -74,7 +76,7 @@
         footer here
     </footer>
 
-    <div class="cxoverlay" role="dialog" aria-modal="true" aria-live="assertive" aria-labelledby="modal-title">
+    <div id="help" class="cxoverlay" role="dialog" aria-modal="true" aria-live="assertive" aria-labelledby="modal-title">
         <div class="cxmodal">
             <button class="cxmodal__close cxbtn cxbtn--simple cxbtn--right cxbtn--small" aria-label="Close"><b>&#x2715;</b></button>
 
@@ -104,7 +106,7 @@
 
             </div>
 
-            <button class="cxmodal__close cxbtn cxbtn--filled cxbtn--right">Close</button>
+            <button class="cxmodal__close cxbtn cxbtn--medium cxbtn--filled cxbtn--right">Close</button>
         </div>
     </div>
 </body>

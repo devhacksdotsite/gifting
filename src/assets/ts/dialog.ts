@@ -2,6 +2,7 @@ export const modal = {
   callOpen: () => {
     //  Store the element that has focus when the modal opens. This is necessary in order to put the focus back where it was, once the user closes the modal.
     modal.opener = document.activeElement;
+    modal.target = document.activeElement.getAttribute('data-modal');
     openModal();
   },
   callClose: () => {
@@ -30,7 +31,8 @@ function setVisibile(visible, el) {
   const display = visible ? 'block' : 'none';
 
   // this need to accept an element id to know which modal to toggle
-  document.querySelector('.cxoverlay').style.display = display;
+  //document.querySelector('.cxoverlay').style.display = display;
+  document.getElementById(modal.target).style.display = display;
 }
 
 function setFocus() {

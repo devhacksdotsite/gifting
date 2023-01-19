@@ -5,3 +5,18 @@
   color: red;
   border: 10px solid red;
 }
+
+.cximage {
+  display: flex;
+  justify-content: center;
+
+  .cximage__wrapper {
+    flex-shrink: 0;
+    justify-content: center;
+    align-self: center;
+
+    .cximage__image {
+      width: 350px; // verify that we want to add a fixed size to this
+    }
+  }
+}
