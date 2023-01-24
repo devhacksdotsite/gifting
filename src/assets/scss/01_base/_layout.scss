@@ -19,7 +19,7 @@
 .cxlayout {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     // height: 90%;
     padding: 30px;
@@ -57,7 +57,7 @@
     .cxgrid {
         display: grid;
         gap: 10px;
-    
+
         & > div {
             //background:red;
         }
