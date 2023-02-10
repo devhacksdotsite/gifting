@@ -15,36 +15,41 @@
     </header>   
 
     <main class="cxwrapper cxwrapper--gray">
-        <section class="cxlayout cxlogin">
-            <div class="cxheadline">
-                <h1 class="cxheadline__main">We got you something!</h1>
-                <p class="cxheadline__sub">Here's a little token of our appreciation. Sign in below with your email address, and the special code you received.</p>
-            </div>
+        <section class="cxlayout cxlayout__bordered cxlogin">
+
+            <!-- start widget content -->
+            <h1>We got you something!</h1>
+            <p>Here's a little token of our appreciation. Sign in below with your email address, and the special code you received.</p>
+            <!-- end widget content -->
 
             <form id="login" class="cxform">
-                <label id="email_label" class="cxform__label" for="email">Username / Email</label>
-                <input 
-                    id="email" 
-                    class="cxform__input" 
-                    type="text" 
-                    name="email" 
-                    aria-labelledby="email_label"
-                    aria-describedby="email_error" 
-                    required 
-                />
-                <div id="email_error" class="sr-only">Username/Email error</div>
+                <div class="cxform__group">
+                    <label id="email_label" class="cxform__label" for="email">Username / Email</label>
+                    <input 
+                        id="email" 
+                        class="cxform__input" 
+                        type="text" 
+                        name="email" 
+                        aria-labelledby="email_label"
+                        aria-describedby="email_error" 
+                        required 
+                    />
+                    <div id="email_error" class="sr-only">Username/Email error</div>
+                </div>
 
-                <label id="code_label" class="cxform__label" for="code">Code</label>
-                <input 
-                    id="code" 
-                    class="cxform__input" 
-                    type="text" 
-                    name="code" 
-                    aria-labelledby="code_label"
-                    aria-describedby="code_error" 
-                    required 
-                />
-                <div id="code_error" class="sr-only">Username/Email error</div>
+                <div class="cxform__group">
+                    <label id="code_label" class="cxform__label" for="code">Code</label>
+                    <input 
+                        id="code" 
+                        class="cxform__input" 
+                        type="text" 
+                        name="code" 
+                        aria-labelledby="code_label"
+                        aria-describedby="code_error" 
+                        required 
+                    />
+                    <div id="code_error" class="sr-only">Username/Email error</div>
+                </div>
 
                 <button class="cxbtn cxbtn--medium cxbtn--filled cxbtn--right" type="submit">Continue</button>
 
@@ -94,10 +99,10 @@
             <button class="cxmodal__close cxbtn cxbtn--simple cxbtn--right cxbtn--small" aria-label="Close"><b>&#x2715;</b></button>
 
             <div class="help cxmodal__content">
-                <h3 id="modal-title" class="help__title">Help</h3>
+                <h1 id="modal-title">Help</h1>
 
                 <section class="help__faqs">
-                    <h4 class="cxheadline__sub">Frequently Asked Questions</h4>
+                    <h2>Frequently Asked Questions</h2>
 
                     <ul class="faqs__list">
                         <li class="faqs__item"><span>&plus;</span> <a href="#">What are normal production and delivery times?</a></li>
@@ -108,7 +113,7 @@
                 </section>
 
                 <section class="help__contact">
-                    <h4 class="cxheadline__sub">We're here to help</h4>
+                    <h2>We're here to help</h2>
                     <p>Have a question? Can't find what you're looking for? We're here to help. Feel free to get in touch with us. We look forward to hearing from you!</p>
 
                     <div class="help__contact-info">

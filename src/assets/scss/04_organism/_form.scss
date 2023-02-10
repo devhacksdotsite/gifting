@@ -1,5 +1,9 @@
 .cxform {
-    margin: 20px 0;
+    margin: 15px 0;
+
+    &__group {
+        margin: 15px auto;
+    }
 
     &__actions {
         margin-top:20px;

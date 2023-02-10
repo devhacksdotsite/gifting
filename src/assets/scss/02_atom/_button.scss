@@ -2,7 +2,6 @@
     border: none;
     border-radius: 100px;
     padding: 10px;
-    //width: 45%;
     margin: 10px 0;
     cursor: pointer;
 
@@ -20,24 +19,25 @@
     }
 
     &--filled {
-        background-color: #2E5B8D;
-        border: 1px solid #2E5B8D;
+        background-color: $primary;
+        border: 1px solid $primary;
+        font-weight: 900;
         color: #fff;
 
         &:hover {
-            background-color: lighten(#2E5B8D, 5%);
+            background-color: lighten($primary, 5%);
         }
     }
 
     &--simple {
         background-color: transparent;
         border: none;
-        color: #2E5B8D;
+        color: $primary;
     } 
 
     &--outlined {
         background-color: transparent;
-        border: 1px solid #2a2a2a;
+        border: 1px solid $base;
     } 
     
 

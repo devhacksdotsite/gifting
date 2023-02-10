@@ -1,30 +1,78 @@
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+  
+a {
+  color: $primary;
+  font-weight: 700;
+  
+  &:hover {
+    color: lighten($primary, 5%);
+  }
+}
+
+ul, ol {
+  list-style: none;
+  list-style-position: inside;
+}
+
+hr {
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #CCCCCC;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse; 
+
+  tbody {
+
+    tr {
+      border-bottom: 1px solid #dddddd;
+      
+      &:first-of-type {
+        border-top: 1px solid #ddd;
+      }
+      &:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+
+    }
   }
 
-  * {
-    margin: 0;
-    padding: 0;
+  th, td {
+    padding: 5px 0;
+    text-align: start;
   }
 
-  html, body {
-    height: 100%;
-  }
-
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-
-  input, button, textarea, select {
-    font: inherit;
-  }
-
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
+}

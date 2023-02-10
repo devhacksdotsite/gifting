@@ -8,23 +8,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: $bg-light;
     overflow-y: scroll;
 
     &--gray {
-        background-color: #FAFAFA;
+        background-color: $bg-dark;
     }
 }
 
 .cxlayout {
-    display: flex;
-    flex-direction: column;
+    margin: 20px auto;
+    //display: flex;
+    //flex-direction: column;
     width: 90%;
     max-width: 800px;
     // height: 90%;
     padding: 30px;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: $bg-light;
+
+    &__bordered {
+        border: 1px solid #ededed;        
+    }
 }
 
 .cxfooter {
@@ -33,6 +38,7 @@
 
 .cxgrid {
     display: grid;
+    grid-auto-columns: 1fr;
     gap: 10px;
 
     & > div {
