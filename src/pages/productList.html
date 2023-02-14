@@ -111,50 +111,54 @@
                         </div>
                     </div>
         
-                    <div class="pdp__details" style="width:85%; margin:0 auto">
-                        <h1 id="modal-title" class="cxheadline__main">Gildan<sup>&reg;</sup> Heavy Cotton<sup>&#8482;</sup> T-Shirt</h1>
+                    <div class="product">
+                        <h1 id="modal-title">Gildan<sup>&reg;</sup> Heavy Cotton<sup>&#8482;</sup> T-Shirt</h1>
         
-                        <section>
-                            <h2 class="cxheadline__sub">Color</h2>
-                            <hr />
-                            <p>Black</p>
-                        </section>
+                        <section class="product__details">
+                            <div class="product__detail">
+                                <h2>Color</h2>
+                                <hr />
+                                
+                                <p>Black</p>
+                            </div>
         
-                        <section>
-                            <h2 class="cxheadline__sub">Description</h2>
-                            <hr />
-        
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ratione quas, harum debitis sint.</p>
-        
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, corrupti.</p>
-        
-                            <ul style="margin: 20px 0;">
-                                <li>&#x2022; Large Size</li>
-                                <li>&#x2022; Large Size</li>
-                                <li>&#x2022; Large Size</li>
-                            </ul>
-                        </section>
-    
-                        <section>
-                            <h2 class="cxheadline__sub">Size</h2>
-                            <hr />
-                            <form id="redeem-form" class="cxform">
-                                <select class="cxform__select cxform__select--medium cxform__select--pill" name="size" id="size">
-                                    <option value="sm">Small</option>
-                                    <option value="md">Medium</option>
-                                    <option value="lg">Large</option>
-                                </select>
+                            <div class="product__detail">
+                                <h2 >Description</h2>
+                                <hr />
             
-                                <button type="" class="cxbtn cxbtn--medium cxbtn--filled">Redeem</button>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad ratione quas, harum debitis sint.</p>
+            
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, corrupti.</p>
+            
+                                <ul style="margin: 20px 0;">
+                                    <li>&#x2022; Large Size</li>
+                                    <li>&#x2022; Large Size</li>
+                                    <li>&#x2022; Large Size</li>
+                                </ul>
+                            </div>
     
-                                <script>
-                                    document.getElementById('redeem-form').addEventListener('submit', function(e) {
-                                        console.log(e);
-                                        e.preventDefault();
-                                        location.href = 'checkout.html';
-                                    });
-                                </script>
-                            </form>                   
+                            <div class="product__detail">
+                                <h2>Size</h2>
+                                <hr />
+                                
+                                <form id="redeem-form" class="cxform">
+                                    <select class="cxform__select cxform__select--medium cxform__select--pill" name="size" id="size">
+                                        <option value="sm">Small</option>
+                                        <option value="md">Medium</option>
+                                        <option value="lg">Large</option>
+                                    </select>
+                
+                                    <button type="" class="cxbtn cxbtn--medium cxbtn--filled">Redeem</button>
+        
+                                    <script>
+                                        document.getElementById('redeem-form').addEventListener('submit', function(e) {
+                                            console.log(e);
+                                            e.preventDefault();
+                                            location.href = 'checkout.html';
+                                        });
+                                    </script>
+                                </form>
+                            </div>                   
                         </section>
     
                     </div>
