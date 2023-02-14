@@ -1,9 +1,17 @@
+// headline
 h1 {
     font-size: 1.2em;
     margin: 2px 0;
+    font-weight: 900;
 }
 
+// subheadline
 h2 {
     margin: 8px 0;
     font-size: 1em;
+    font-weight: 600;
+}
+
+p, li {
+    font-size: 0.9em;
 }

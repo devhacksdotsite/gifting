@@ -22,49 +22,54 @@
                     </div>
                 </div>
     
-                <div class="pdp__details">
-                    <h1 class="cxheadline__main">Gildan<sup>&reg;</sup> Heavy Cotton<sup>&#8482;</sup> T-Shirt</h1>
+                <div class="product">
+                    <h1 class="product__title">Gildan<sup>&reg;</sup> Heavy Cotton<sup>&#8482;</sup> T-Shirt</h1>
     
-                    <section>
-                        <h2 class="cxheadline__sub">Color</h2>
-                        <hr />
-                        <p>black</p>
-                    </section>
-    
-                    <section>
-                        <h2 class="cxheadline__sub">Description</h2>
-                        <hr />
-    
-                        <p>Preshrunk, 5.3oz, 100% cotton (blended cotton/polyester)</p>
-    
-                        <ul class="my">
-                            <li>&#x2022; Seamless rib-knit collar</li>
-                            <li>&#x2022; Taped neck and shoulders</li>
-                            <li>&#x2022; Double needle stictching on collar, sleeves and bottom hem</li>
-                            <li>&#x2022; Quarter-turned to eliminate center crease</li>
-                            <li>&#x2022; Import</li>
-                        </ul>
-                    </section>
+                    <section class="product__details">
+                        <div class="product__detail">
+                            <h2>Color</h2>
+                            <hr />
+                            <p>Black<p> 
+                        </div>
 
-                    <section>
-                        <h2 class="cxheadline__sub">Size</h2>
-                        <hr />
-                        <form id="redeem-form" class="cxform">
-                            <select class="cxform__select cxform__select--medium cxform__select--pill" name="size" id="zize">
-                                <option value="sm">Small</option>
-                                <option value="md">Medium</option>
-                                <option value="lg">Large</option>
-                            </select>
+                        <div class="product__detail">
+                            <h2>Description</h2>
+                            <hr />
         
-                            <button class="cxbtn cxbtn--medium cxbtn--filled">Redeem</button>
+                            <p>Preshrunk, 5.3oz, 100% cotton (blended cotton/polyester)</p>                            
+                        </div>
 
-                            <script>
-                                document.getElementById('redeem-form').addEventListener('submit', function(e) {
-                                    e.preventDefault();
-                                    location.href = 'checkout.html';
-                                });
-                            </script>
-                        </form>                   
+                        <div class="product_detail">
+                            <ul>
+                                <li>&#x2022; Seamless rib-knit collar</li>
+                                <li>&#x2022; Taped neck and shoulders</li>
+                                <li>&#x2022; Double needle stictching on collar, sleeves and bottom hem</li>
+                                <li>&#x2022; Quarter-turned to eliminate center crease</li>
+                                <li>&#x2022; Import</li>
+                            </ul>
+                        </div>
+
+                        <div class="product__detail">
+                            <h2>Size</h2>
+                            <hr />
+
+                            <form id="redeem-form" class="cxform">
+                                <select class="cxform__select cxform__select--medium cxform__select--pill" name="size" id="size">
+                                    <option value="sm">Small</option>
+                                    <option value="md">Medium</option>
+                                    <option value="lg">Large</option>
+                                </select>
+            
+                                <button class="cxbtn cxbtn--medium cxbtn--filled">Redeem</button>
+
+                                <script>
+                                    document.getElementById('redeem-form').addEventListener('submit', function(e) {
+                                        e.preventDefault();
+                                        location.href = 'checkout.html';
+                                    });
+                                </script>
+                            </form>
+                        </div>                   
                     </section>
 
                 </div>
@@ -81,10 +86,10 @@
             <button class="cxmodal__close cxbtn cxbtn--simple cxbtn--right cxbtn--small" aria-label="Close"><b>&#x2715;</b></button>
 
             <div class="help cxmodal__content">
-                <h3 id="modal-title" class="help__title">Help</h3>
+                <h1 id="modal-title">Help</h1>
 
                 <section class="help__faqs">
-                    <h4 class="cxheadline__sub">Frequently Asked Questions</h4>
+                    <h2>Frequently Asked Questions</h2>
 
                     <ul class="faqs__list">
                         <li class="faqs__item"><span>&plus;</span> <a href="#">What are normal production and delivery times?</a></li>
@@ -95,7 +100,7 @@
                 </section>
 
                 <section class="help__contact">
-                    <h4 class="cxheadline__sub">We're here to help</h4>
+                    <h2>We're here to help</h2>
                     <p>Have a question? Can't find what you're looking for? We're here to help. Feel free to get in touch with us. We look forward to hearing from you!</p>
 
                     <div class="help__contact-info">

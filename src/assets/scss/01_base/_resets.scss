@@ -41,7 +41,7 @@ a {
 
 ul, ol {
   list-style: none;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 hr {
@@ -54,6 +54,7 @@ hr {
 table {
   margin-top: 20px;
   border-collapse: collapse; 
+  width: 100%;
 
   tbody {
 

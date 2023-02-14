@@ -1,0 +1,19 @@
+.product {
+    padding: 10px;
+
+    &__details {
+        
+    }
+
+    &__detail {
+        margin: 5px auto;
+    }
+
+    &__detail--flex {
+        display:flex;
+        align-items: baseline;
+        gap: 5px;
+
+    }
+}
+
