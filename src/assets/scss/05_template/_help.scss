@@ -1,4 +1,4 @@
-// how template should be layed out
+
 .help {
     margin: 20px 0;
 
@@ -9,8 +9,9 @@
     
             .faqs__item {
                 margin: 10px 5px;
-    
-                span {
+                
+                span, a {
+                    font-weight: 500;
                     color: $primary;
                 }
             }

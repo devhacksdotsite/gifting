@@ -16,7 +16,12 @@
     align-self: center;
 
     .cximage__image {
+      padding: 10px;
       width: 350px; // verify that we want to add a fixed size to this
+    }
+
+    .cximage__image--sm {
+      width: 250px;
     }
   }
 }
