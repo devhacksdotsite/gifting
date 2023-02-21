@@ -1,4 +1,7 @@
-export const modal = {
+// fix types 
+export const modal:any = {
+  opener: null,
+  target: null,
   callOpen: () => {
     //  Store the element that has focus when the modal opens. This is necessary in order to put the focus back where it was, once the user closes the modal.
     modal.opener = document.activeElement;
@@ -9,7 +12,7 @@ export const modal = {
   callClose: () => {
     closeModal(modal.opener);
   },
-  handleOverlayClick: (event) => {
+  handleOverlayClick: (event:any) => {
     if (event.target.className === 'cxoverlay') {
       closeModal(modal.opener);
     }
@@ -28,13 +31,13 @@ function openModal() {
   setInertBehindModal(true);
 }
 
-function closeModal(opener) {
+function closeModal(opener:any) {
   setVisibile(false);
   setInertBehindModal(false);
   opener.focus();
 }
 
-function setVisibile(visible) {
+function setVisibile(visible:any) {
   const display = visible ? 'block' : 'none';
 
   console.log(modal.target);
@@ -46,13 +49,13 @@ function setFocus() {
   document.querySelectorAll('.cxmodal button, cxmodal input, cxmodal textarea, cxmodal select')[0].focus();
 }
 
-function setInertBehindModal(inert) {  
+function setInertBehindModal(inert:any) {  
   const element = document.querySelector('main');
   element.inert = inert;
   element.setAttribute('aria-hidden', inert);
 }
 
-function clallIfEscPress(event) {
+function clallIfEscPress(event:any) {
   if(event.key === 'Escape') {
     modal.callClose();
   }

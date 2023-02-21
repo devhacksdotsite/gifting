@@ -27,7 +27,7 @@
                     <label id="email_label" class="cxform__label" for="email">Username / Email</label>
                     <input 
                         id="email" 
-                        class="cxform__input" 
+                        class="cxform__input cxform__input--error" 
                         type="text" 
                         name="email" 
                         aria-labelledby="email_label"
@@ -51,6 +51,26 @@
                     <div id="code_error" class="sr-only">Username/Email error</div>
                 </div>
 
+                <!-- hidden by default  -->
+                <div class="cxform__group">
+                    <h1>It looks like you've already claimed your gift.</h1>
+                    <h3>Track your status</h3>
+
+                    <label id="zipcode_label" class="cxform__label" for="zipcode">Zip Code</label>
+                    <input 
+                        id="zipcode" 
+                        class="cxform__input" 
+                        type="text" 
+                        maxlength="5"
+                        name="zipcode" 
+                        aria-labelledby="zipcode_label" 
+                        aria-describedby="zipcode_error"
+                        required  
+                    />  
+                    <div id="zipcode_error" class="sr-only">Zip Code error</div>
+
+                </div>
+
                 <button class="cxbtn cxbtn--medium cxbtn--filled cxbtn--right" type="submit">Continue</button>
 
                 <script>
@@ -61,32 +81,11 @@
                 </script>
             </form>
 
-            <div class="cxlogin__error ">
-                <h1 class="cxlogin__error-msg">Incorrect Credentials</h1>
-
-                <div class="cxlogin__track-status cxhidden">
-                    <h2>Track your status</h2>
-                    <form class="cxform">
-                        <label id="zipcode_label" class="cxform__label" for="zipcode">Zip Code</label>
-                        <input 
-                            id="zipcode" 
-                            class="cxform__input" 
-                            type="text" 
-                            name="zipcode" 
-                            aria-labelledby="zipcode_label" 
-                            aria-describedby="zipcode_error"
-                            required  
-                        />  
-                        <button class="cxbtn cxbtn--filled cxbtn--center" type="submit">Continue</button>
-                        <div id="zipcode_error" class="sr-only">Zip Code error</div>
-
-                    </form>
-                </div>
-
-
-            </div>
-
-            <p class="cxlogin__fine-print">
+            <!-- hidden by default  -->
+            <h1 class="cxlogin__error-msg cxwarn ">Incorrect Credentials</h1>
+            
+            <!-- hidden by default  -->
+            <p class="cxlogin__contact cxwarn">
                 If this doesn't seem right, please contact our friendly customer service by email at <a href="mailto:promosupport@staples.com">promosupport@staples.com</a> or call <a href="tel:18004913003">1-800-491-3003</a>.
             </p>
         </section>

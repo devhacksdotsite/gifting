@@ -22,4 +22,9 @@
         border: 1px solid gray;
         border-radius: 3px;
     }
+
+    &__input--error {
+        border-color: red;
+        box-shadow: 0 0 5px red;
+    }
 }
